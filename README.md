@@ -22,7 +22,7 @@ Thus, it is clear that fine-tuning to the test set does lower the perplexity.
 
 ### Generate at least 100 samples from GPT-2 with fine-tuning and 100 without fine-tuning. Compute the word (or token) overlap of the generated text with the text in the test set. Which set of generated sentences has more words in common with the text in the test set? Is this what you expected?
 
-todo
+We find a word overlap of 33% for the pretrained vs 38% for the finetuned which makes sense considering the weights of the latter were modified when fine-tuning on another dataset.
 
 ### The provided code uses top-k with k=50 for generation. Experiment with different sampling strategies and observe how this impacts the quality and diversity of the generations. If you’d like, implement a measure of text diversity such as self-BLEU or dist-1 (the number of unique generated words divided by the total number of generated words), and plot how it changes as you vary the value of either temperature, k, or p.
 
@@ -92,7 +92,7 @@ Thus, it is clear that fine-tuning to the test set does lower the perplexity.
 
 ### Generate at least 100 samples from GPT-2 with fine-tuning and 100 without fine-tuning. Compute the word (or token) overlap of the generated text with the text in the test set. Which set of generated sentences has more words in common with the text in the test set? Is this what you expected?
 
-todo
+We found a text overlap of 18% this time, which makes sense considering Paul Graham has a unique stype of tweeting, not to mention that tweeting is different from most text.
 
 ### The provided code uses top-k with k=50 for generation. Experiment with different sampling strategies and observe how this impacts the quality and diversity of the generations. If you’d like, implement a measure of text diversity such as self-BLEU or dist-1 (the number of unique generated words divided by the total number of generated words), and plot how it changes as you vary the value of either temperature, k, or p.
 
